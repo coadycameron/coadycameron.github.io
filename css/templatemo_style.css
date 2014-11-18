@@ -144,7 +144,6 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     font-size: 20px;
 }
 
-
 .templatemo-service-item p {
     font-weight: lighter; 
     text-align: justify; 
@@ -284,7 +283,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 }
 
 .member-thumb .thumb-overlay {
-	background-color: rgba(51,153,255,0.8);
+	background-color: rgba(51,153,255,0.5);
 	position: absolute;
 	visibility: hidden;
 	padding-top: 42%;

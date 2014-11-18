@@ -44,7 +44,7 @@ jQuery(function($) {
             return false;
         });
 		
-		//scroll to templatemo-solution whne click on read more button in carousel
+		//scroll to templatemo-solution when click on read more button in carousel
 		$('#btn-read-more').click(function(e){
             e.preventDefault(); 
             var linkId = $(this).attr('href');
