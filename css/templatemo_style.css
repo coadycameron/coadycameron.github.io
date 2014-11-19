@@ -265,6 +265,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 	font-family: 'Open Sans', sans-serif;
 	min-height: 590px;
 	color: #ffffff;
+	padding-bottom:10px;
 }
 .templatemo-line-header {
     margin-top:50px;
@@ -299,8 +300,6 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     float:left;
     margin-right: 5px;
 }
-
-
 
 .team-inner {
     margin-top:10px;
