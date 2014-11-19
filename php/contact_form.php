@@ -9,6 +9,8 @@ $subject = 'Contact Form Submission';
 
 $body = "From: $name\n E-Mail: $email\n Message:\n $message";
 
+$mail_status = mail ($to, $subject, $body, $from);
+
 if ($_POST['submit']) {
 	if (mail ($to, $subject, $body, $from)) {
 		echo '<p>Your message has been sent, we will contact you as soon as possible.</p>';
