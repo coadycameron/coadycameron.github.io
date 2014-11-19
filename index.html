@@ -38,7 +38,7 @@
                 <div class="subheader">
                     <div id="email" class="pull-right">
                             <img src="images/email.png" alt="email"/>
-                            <a href="mailto:info@totalpave.com" target="_blank">info@totalpave.com</a>
+                            <a href="mailto:info@totalpave.com" target="_blank">Now accepting demo requests, email for details</a>
                     </div>
                 </div>
             </div>
@@ -130,7 +130,7 @@
                                 <img src="images/cloud.png" alt="icon"/>
                                 <span class="templatemo-service-item-header">ROBUST ANALYSIS</span>
                             </div>
-							<p>Data is streamed automatically to ourcloud-based servers and can instantly be viewed on your personal web portal. It is presented in both tabular form and plotted on an interactive map. Whether you need to evaluate network condition as a whole or checking a specifc distress on a single street, analysis is easy with TotalPave.</p>
+							<p>Data is streamed automatically to our cloud-based servers and can instantly be viewed on your personal web portal. It is presented in both tabular form and plotted on an interactive map. Whether you need to evaluate network condition as a whole or checking a specifc distress on a single street, analysis is easy with TotalPave.</p>
                             <br class="clearfix"/>
                         </div>
                         
@@ -166,7 +166,7 @@
                         <li class="col-lg-4 col-md-4 col-sm-6 ">
                             <div class="text-center">
                                 <div class="member-thumb">
-                                    <img src="images/member1.jpg" class="img-responsive" alt="member 1" />
+                                    <img src="images/member1.jpg" class="img-responsive" alt="Coady Cameron" />
                                     <div class="thumb-overlay">
                                         <a href="https://twitter.com/coadycameron" target="_blank"><span class="social-icon-twitter"></span></a>
                                         <a href="https://www.linkedin.com/pub/coady-cameron/45/2a2/9a6" target="_blank"><span class="social-icon-linkedin"></span></a>
@@ -183,7 +183,7 @@
                         <li class="col-lg-4 col-md-4 col-sm-6 ">
                             <div class="text-center">
                                 <div class="member-thumb">
-                                    <img src="images/member2.jpg" class="img-responsive" alt="member 2" />
+                                    <img src="images/member2.jpg" class="img-responsive" alt="Drew Cameron" />
                                     <div class="thumb-overlay">
                                         <a href="https://twitter.com/drewcamerons" target="_blank"><span class="social-icon-twitter"></span></a>
                                         <a href="#templatemo-team"><span class="social-icon-linkedin"></span></a>
@@ -198,7 +198,7 @@
                         <li class="col-lg-4 col-md-4 col-sm-6 ">
                             <div class="text-center">
                                 <div class="member-thumb">
-                                    <img src="images/member3.jpg" class="img-responsive" alt="member 3" />
+                                    <img src="images/member3.jpg" class="img-responsive" alt="Jordan Graham" />
                                     <div class="thumb-overlay">
                                         <a href="https://twitter.com/jordangrahamnb" target="_blank"><span class="social-icon-twitter"></span></a>
                                         <a href="http://ca.linkedin.com/pub/jordan-graham/36/802/2b" target="_blank"><span class="social-icon-linkedin"></span></a>
@@ -232,17 +232,17 @@
                         <p>To request a demo or submit a general inquiry, please fill out all the fields in the form below.</p>
                         <p><img src="images/location.png" alt="icon 1" /> 50 Crowther Lane (Suite 140), Fredericton NB</p>
                         <p><img src="images/phone1.png"  alt="icon 2" /> 506-261-3225</p>
-                        <form class="form-horizontal" action="#">
+                        <form class="form-horizontal" method="post" action="contact_form.php">
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Your Name..." maxlength="40" />
+                                <input type="email" name="name" class="form-control" placeholder="Your Name..." maxlength="40" />
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Your Email..." maxlength="40" />
+                                <input type="email" name="email" class="form-control" placeholder="Your Email..." maxlength="40" />
                             </div>
                             <div class="form-group">
-                                <textarea  class="form-control" style="height: 130px;" placeholder="Write down your message..."></textarea>
+                                <textarea name="message" class="form-control" style="height: 130px;" placeholder="Your message..."></textarea>
                             </div>
-                            <button type="submit" class="btn btn-orange pull-right">SEND</button>
+                            <button type="submit" name="submit" class="btn btn-orange pull-right">SEND</button>
                         </form>
                         	
                     </div>
@@ -284,6 +284,7 @@
         <script src="js/stickUp.min.js"  type="text/javascript"></script>
         <script src="js/colorbox/jquery.colorbox-min.js"  type="text/javascript"></script>
         <script src="js/templatemo_script.js"  type="text/javascript"></script>
+        <script src="php/contact_form.php"></script>
 <!-- templatemo 395 urbanic -->
 <!-- 
 Urbanic Template 
