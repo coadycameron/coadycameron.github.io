@@ -16,7 +16,7 @@ if ($mail_status) { ?>
 // Print a message
 alert('Thank you for the message. We will contact you shortly.');
 // Redirect to some page of the site. You can also specify full URL, e.g. http://template-help.com
-window.location = '#templatemo-contact';
+window.location = 'coadycameron.me/#templatemo-contact';
 </script>
 <?php
 }
@@ -26,7 +26,7 @@ else { ?>
 // Print a message
 alert('Message failed. Please, send an email to gordon@template-help.com');
 // Redirect to some page of the site. You can also specify full URL, e.g. http://template-help.com
-window.location = '#templatemo-contact';
+window.location = 'coadycameron.me/#templatemo-contact';
 </script>
 <?php
 }?>

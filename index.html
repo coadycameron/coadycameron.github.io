@@ -232,17 +232,18 @@
                         <p>To request a demo or submit a general inquiry, please fill out all the fields in the form below.</p>
                         <p><img src="images/location.png" alt="icon 1" /> 50 Crowther Lane (Suite 140), Fredericton NB</p>
                         <p><img src="images/phone1.png"  alt="icon 2" /> 506-261-3225</p>
-                        <form class="form-horizontal" method="post" action="contact_formv2.php">
-                            <div class="form-group">
-                                <input type="email" name="name" class="form-control" placeholder="Your Name..." maxlength="40" />
+                        <form id="contact_form" class="form-horizontal">
+                            <div class="form-group" id="contact_body">
+                                <input type="text" name="name" required class="form-control" placeholder="Your Name..." maxlength="40" />
                             </div>
                             <div class="form-group">
-                                <input type="email" name="email" class="form-control" placeholder="Your Email..." maxlength="40" />
+                                <input type="email" name="email" required class="form-control" placeholder="Your Email..." maxlength="40" />
                             </div>
                             <div class="form-group">
-                                <textarea name="message" class="form-control" style="height: 130px;" placeholder="Your message..."></textarea>
+                                <textarea name="message" required class="form-control" style="height: 130px;" placeholder="Your message..."></textarea>
                             </div>
-                            <button type="submit" name="submit" class="btn btn-orange pull-right">SEND</button>
+                            <button type="submit" id="submit_btn" name="submit" class="btn btn-orange pull-right">SEND</button>
+                            <div id="contact_results"></div>
                         </form>
                         	
                     </div>
@@ -284,7 +285,8 @@
         <script src="js/stickUp.min.js"  type="text/javascript"></script>
         <script src="js/colorbox/jquery.colorbox-min.js"  type="text/javascript"></script>
         <script src="js/templatemo_script.js"  type="text/javascript"></script>
-        <script src="php/contact_formv2.php"></script>
+        <script src="php/contact_me.php"></script>
+        
 <!-- templatemo 395 urbanic -->
 <!-- 
 Urbanic Template 
