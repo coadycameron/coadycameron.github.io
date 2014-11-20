@@ -1,7 +1,7 @@
 <?php
 if($_POST)
 {
-	$to_email   	= "myemail@gmail.com"; //Recipient email, Replace with own email here
+	$to_email   	= "coady.cameron@totalpave.com"; //Recipient email, Replace with own email here
 	
 	//check if its an ajax request, exit if not
     if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
@@ -16,6 +16,8 @@ if($_POST)
 	//Sanitize input data using PHP filter_var().
 	$user_name		= filter_var($_POST["user_name"], FILTER_SANITIZE_STRING);
 	$user_email		= filter_var($_POST["user_email"], FILTER_SANITIZE_EMAIL);
+	$country_code	= filter_var($_POST["country_code"], FILTER_SANITIZE_NUMBER_INT);
+	$phone_number	= filter_var($_POST["phone_number"], FILTER_SANITIZE_NUMBER_INT);
 	$subject		= filter_var($_POST["subject"], FILTER_SANITIZE_STRING);
 	$message		= filter_var($_POST["msg"], FILTER_SANITIZE_STRING);
 	
@@ -28,6 +30,14 @@ if($_POST)
 		$output = json_encode(array('type'=>'error', 'text' => 'Please enter a valid email!'));
 		die($output);
 	}
+	if(!filter_var($country_code, FILTER_VALIDATE_INT)){ //check for valid numbers in country code field
+		$output = json_encode(array('type'=>'error', 'text' => 'Enter only digits in country code'));
+		die($output);
+	}
+	if(!filter_var($phone_number, FILTER_SANITIZE_NUMBER_FLOAT)){ //check for valid numbers in phone number field
+		$output = json_encode(array('type'=>'error', 'text' => 'Enter only digits in phone number'));
+		die($output);
+	}
 	if(strlen($subject)<3){ //check emtpy subject
 		$output = json_encode(array('type'=>'error', 'text' => 'Subject is required'));
 		die($output);
@@ -38,7 +48,7 @@ if($_POST)
 	}
 	
 	//email body
-	$message_body = $message."\r\n\r\n-".$user_name."\r\nEmail : ".$user_email ;
+	$message_body = $message."\r\n\r\n-".$user_name."\r\nEmail : ".$user_email."\r\nPhone Number : (".$country_code.") ". $phone_number ;
 	
 	//proceed with PHP email.
 	$headers = 'From: '.$user_name.'' . "\r\n" .

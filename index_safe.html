@@ -232,31 +232,19 @@
                         <p>To request a demo or submit a general inquiry, please fill out all the fields in the form below.</p>
                         <p><img src="images/location.png" alt="icon 1" /> 50 Crowther Lane (Suite 140), Fredericton NB</p>
                         <p><img src="images/phone1.png"  alt="icon 2" /> 506-261-3225</p>
-                        <div class="form-style" id="contact_form">
-    <div class="form-style-heading">Please Contact Us</div>
-    <div id="contact_results"></div>
-    <div id="contact_body">
-        <label><span>Name <span class="required">*</span></span>
-            <input type="text" name="name" id="name" required="true" class="input-field"/>
-        </label>
-        <label><span>Email <span class="required">*</span></span>
-            <input type="email" name="email" required="true" class="input-field"/>
-        </label>
-            <label for="subject"><span>Regarding</span>
-            <select name="subject" class="select-field">
-            <option value="General Question">General Question</option>
-            <option value="Advertise">Advertisement</option>
-            <option value="Partnership">Partnership Oppertunity</option>
-            </select>
-        </label>
-        <label for="field5"><span>Message <span class="required">*</span></span>
-            <textarea name="message" id="message" class="textarea-field" required="true"></textarea>
-        </label>
-        <label>
-            <span>&nbsp;</span><input type="submit" id="submit_btn" value="Submit" />
-        </label>
-    </div>
-</div>
+                        <form id="contact_form" class="form-horizontal">
+                            <div class="form-group" id="contact_body">
+                                <input type="text" name="name" required class="form-control" placeholder="Your Name..." maxlength="40" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" required class="form-control" placeholder="Your Email..." maxlength="40" />
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" required class="form-control" style="height: 130px;" placeholder="Your message..."></textarea>
+                            </div>
+                            <button type="submit" id="submit_btn" name="submit" class="btn btn-orange pull-right">SEND</button>
+                            <div id="contact_results"></div>
+                        </form>
                         	
                     </div>
                 </div><!-- /.row -->
