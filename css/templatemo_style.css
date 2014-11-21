@@ -56,6 +56,12 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     margin: 30px 0 0 0;
 }
 
+@media (max-width: 410px) {
+    .templatemo-top-men .subheader {
+        text-align: center;
+    }
+}
+
 /* ------ Carousel ----- */
 
 #templatemo-carousel {
