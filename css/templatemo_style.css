@@ -145,11 +145,11 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 }
 
 .templatemo-service-item p {
-    font-weight: lighter; 
-    text-align: justify; 
-    margin-top: 25px;
-    font-size: 14px;
-    color: #929292;
+	font-weight: normal;
+	text-align: justify;
+	margin-top: 25px;
+	font-size: 14px;
+	color: #929292;
 }
 
 .subheader {
@@ -724,4 +724,3 @@ ul.templatemo-project-gallery  li  a img:hover {
 		width: 13%;
 	}
 }
-
