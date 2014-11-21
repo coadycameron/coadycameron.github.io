@@ -58,8 +58,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
 @media (max-width: 410px) {
     .templatemo-top-bar .subheader {
-        text-align: center;
-		font-size:2px
+		font-size:10px
     }
 }
 
