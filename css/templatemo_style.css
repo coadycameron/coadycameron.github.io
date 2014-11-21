@@ -724,3 +724,13 @@ ul.templatemo-project-gallery  li  a img:hover {
 		width: 13%;
 	}
 }
+
+/* ------ Styles for Animate.css ----- */
+
+
+.hideme{
+     opacity:0;
+}
+.showme{
+     opacity:1;
+}

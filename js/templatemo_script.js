@@ -112,3 +112,61 @@ function scrollTo(selectors)
 
 }
 
+// Fade in from the left effect for templatemo-service
+
+jQuery(document).ready(function() {
+	jQuery('#templatemo-carousel').addClass('hideme').viewportChecker({
+		classToAdd: 'visible animated fadeInLeft',
+		offset: 100
+	});
+	
+});
+
+jQuery(document).ready(function() {
+	jQuery('.templatemo-service').addClass('hideme').viewportChecker({
+		classToAdd: 'visible animated fadeIn',
+		offset: 100
+	});
+	
+});
+
+jQuery(document).ready(function() {
+	jQuery('.templatemo-team').addClass('hideme').viewportChecker({
+		classToAdd: 'visible animated fadeIn',
+		offset: 100
+	});
+	
+});
+
+jQuery(document).ready(function() {
+	jQuery('#templatemo-contact').addClass('hideme').viewportChecker({
+		classToAdd: 'visible animated fadeIn',
+		offset: 100
+	});
+	
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
