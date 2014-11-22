@@ -146,27 +146,6 @@ jQuery(document).ready(function() {
 	
 });
 
-// Change icon images on rollover in service section
-
-
-$('#robana').on({
-    mouseover: function(){
-        $('img.cloud').attr('src', 'images/cloud2.png');
-    },
-     mouseleave: function(){
-        $('img.cloud').attr('src', 'images/cloud.png');
-    },
-});
-
-$('#eascol').on({
-    mouseover: function(){
-        $('img.mobile').attr('src', 'images/mobile2.png');
-    },
-     mouseleave: function(){
-        $('img.mobile').attr('src', 'images/mobile.png');
-    },
-});
-
 
 
 
