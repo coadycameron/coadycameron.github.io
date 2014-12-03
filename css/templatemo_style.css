@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     top: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     #templatemo-carousel .carousel-caption p {
         margin-bottom: 20px;
         line-height: 1.4;
@@ -104,9 +104,10 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     #templatemo-carousel .carousel-caption {
         padding-bottom: 120px;
+		font-size:15px;
     }
 }
 
