@@ -84,18 +84,37 @@ jQuery(function($) {
 });
 
 function initialize() {
-   var myLatlng = new google.maps.LatLng(45.9312486,-66.6573474);
+   var myLatlng = new google.maps.LatLng(45.9455,-66.6381);
 	var mapOptions = {
-  		zoom: 16,
+  		zoom: 17,
   		center: myLatlng,
-		scrollwheel: false
+		scrollwheel: false,
+		mapTypeControlOptions: {
+         mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'tehgrayz']
+    }
 }
+
+var stylez = [
+    {
+      featureType: "all",
+      elementType: "all",
+      stylers: [
+        { saturation: -100 } // <-- THIS
+      ]
+    }
+];
 
 var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 
+var mapType = new google.maps.StyledMapType(stylez, { name:"Grayscale" });    
+map.mapTypes.set('tehgrayz', mapType);
+map.setMapTypeId('tehgrayz');
+
+var image = 'images/custom-marker.png';
 var marker = new google.maps.Marker({
     position: myLatlng,
-    title:"TotalPave, 50 Crowther Lane"
+    title:"TotalPave, 8 Garland Court (Enterprise UNB Building #1",
+	icon: image
 });
 
 // To add the marker to the map, call setMap();
