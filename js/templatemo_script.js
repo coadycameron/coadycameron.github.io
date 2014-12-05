@@ -135,7 +135,7 @@ function scrollTo(selectors)
 
 jQuery(document).ready(function() {
 	jQuery('#templatemo-carousel').addClass('hideme').viewportChecker({
-		classToAdd: 'visible animated fadeInLeft',
+		classToAdd: 'visible animated fadeIn',
 		offset: 100
 	});
 	
