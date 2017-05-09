@@ -1,0 +1,791 @@
+/* 
+totalpave.com 395 urbanic
+*/
+
+/* 
+Urbanic Template 
+http://www.totalpave.com/preview/totalpave_395_urbanic 
+*/
+
+body, html { overflow-x:hidden; }
+
+body {
+	background-color: #ffffff;
+	font-family: 'Open Sans', Arial, Helvetice Neue, sans-serif;
+	font-size: 12px;
+	font-weight: 300;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neue, sans-serif; }
+
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+
+.totalpave_clear {
+	clear: both;
+}
+
+.height30 {
+	height: 30px;
+}
+
+.totalpave-top-bar {
+    min-height: 40px;
+    background-color:#eeeeee;
+}
+
+.totalpave-top-menu {
+    min-height:110px;
+    background-color:#ffffff;
+    z-index: 5000;
+    width:100%;
+}
+
+.totalpave-top-menu .navbar-toggle {
+    margin-top: 38px;
+}
+
+.totalpave-top-menu .navbar-brand {
+    padding: 0;
+    margin: 30px 0 0 0;
+}
+
+@media (max-width: 410px) {
+    .totalpave-top-bar .subheader {
+		font-size:10px
+    }
+}
+
+/* ------ Carousel ----- */
+
+#totalpave-carousel {
+    background: url('../images/totalpave_carousel_bg.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
+    margin-bottom:0;
+    height: 500px;
+}
+
+#totalpave-carousel .carousel-caption {
+    z-index: 10;
+}
+
+#totalpave-carousel .item {
+    height: 500px;
+}
+#totalpave-carousel .carousel-inner > .item > img {
+    position: absolute;
+    min-width: 100%;
+    height: 500px;
+    left: 0;
+    top: 0;
+}
+
+@media (min-width: 769px) {
+    #totalpave-carousel .carousel-caption p {
+        margin-bottom: 20px;
+        line-height: 1.4;
+        font-size: 21px;
+    }
+
+    #totalpave-carousel .carousel-caption {
+        padding-bottom: 140px;
+        right: 20%;
+        left: 20%;
+    }
+}
+
+@media (max-width: 769px) {
+    #totalpave-carousel .carousel-caption {
+        padding-bottom: 120px;
+		font-size:15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #totalpave-carousel {
+        background: url('../images/totalpave_carousel_bg_s.jpg') no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        overflow-x: hidden;
+        margin-bottom:0;
+        height: 500px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #totalpave-carousel .carousel-caption h1 {
+        margin-bottom: 10px;
+        line-height: 1.1;
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 767px) {
+    #totalpave-carousel .carousel-caption h1 {
+        margin-bottom: 10px;
+        line-height: 1.1;
+        font-size: 30px;
+    }
+}
+
+/* ------ End of Carousel ----- */
+
+/* ------ Welcome & Slogna ------ */
+.totalpave-welcome {
+    border-bottom: 1px solid #cccccc;
+    min-height: 230px;
+}
+
+.totalpave-slogan {
+    font-family:  'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 42px;
+    margin: 60px 0;
+    color: #333333;
+}
+
+.totalpave-service {
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.totalpave-service-item {
+	position: relative;
+    font-family:  'Open Sans', sans-serif;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.totalpave-service-item img{
+	transition: all .25s ease 0s;
+}
+
+.totalpave-service-item:hover img:first-child{
+  	opacity: 0;  
+}
+
+.totalpave-service-item img:nth-child(2){
+  	opacity: 0;  
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.totalpave-service-item:hover img:nth-child(2){
+  opacity: 1;  
+}
+
+.totalpave-service-item p {
+	font-weight: normal;
+	text-align: justify;
+	margin-top: 25px;
+	font-size: 14px;
+	color: #929292;
+}
+
+.subheader {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	margin-top: 12px;
+	font-size: 12px;
+	color: #3399FF;
+}
+
+
+.btn-orange {
+	background-color: #3399FF;
+	border-bottom: 2px solid #0033ff;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	color: #ffffff;
+}
+
+.btn-orange:hover, .btn-orange:focus, .btn-orange:active, .btn-orange.active, .open .dropdown-toggle.btn-orange {
+	background-color: #3366FF;
+	color: #ffffff;
+}
+
+.btn-green {
+	background-color: #3399FF;
+	border-bottom: 2px solid #0033ff;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	color: #ffffff;
+}
+
+.btn-green:hover, .btn-green:focus, .btn-green:active, .btn-green.active, .open .dropdown-toggle.btn-green {
+	background-color: #3366FF;
+	color: #ffffff;
+}
+
+.nav > li > a {
+    padding: 10px 20px;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+	background-color: ##3399FF;
+	color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	background-color: #3399FF;
+	color: #fff;
+}
+
+
+.nav > li > a {
+    color: #929292;
+}
+.navbar-default {
+    background-color:#fff;
+    border:none;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	background-color: #3399FF;
+	color: #fff;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.totalpave-service-item-header {
+    margin-left: -10px; 
+    padding: 16px 20px 20px; 
+    font-weight: bold;
+    display: inline-block;
+}
+
+.totalpave-header-orange {
+    background-color:#ff7600;
+    min-width: 298px;
+    height: 67px;
+    color: #fff; 
+
+}
+
+.team_hr {
+	border: 1px solid #fff;
+	width: 32%;
+	float: left;
+}
+
+.team_hr_left {
+	margin-right: 30px;
+	margin-left: 10%;
+}
+
+.team_hr_right {
+	margin-left: 30px;
+	margin-right: 10%;
+}
+
+.hr_gray {
+    border: 1px solid #cccccc; 
+}
+
+.totalpave-team {
+	background-color:#666666;
+	font-family: 'Open Sans', sans-serif;
+	min-height: 590px;
+	color: #ffffff;
+	padding-bottom:10px;
+}
+.totalpave-line-header {
+    margin-top:50px;
+    margin-bottom:80px;
+}
+
+.member-thumb:hover .thumb-overlay {
+	transition: all 0.3s ease-in-out 0s;
+	visibility: visible;
+	opacity: 1;
+}
+
+.member-thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.member-thumb .thumb-overlay {
+	background-color: rgba(51,153,255,0.5);
+	position: absolute;
+	visibility: hidden;
+	padding-top: 42%;
+	padding-left: 38%;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	right: 0;
+	top: 0;
+}
+
+.thumb-overlay a {
+    float:left;
+    margin-right: 5px;
+}
+
+.team-inner {
+    margin-top:10px;
+}
+
+.team-inner-header {
+    font-family: 'Open Sans', sans-serif;
+    font-weight:600;
+    font-size:16px;
+}
+
+.team-inner-subtext {
+    font-weight:normal;
+    font-size:12px;
+}
+
+.row_team {
+    margin-left:-50px;
+    margin-top:70px;
+}
+
+.row_team li {
+    list-style: none;
+}
+
+.totalpave-project-box {
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    cursor:pointer;
+    height: 200px;
+    width: 200px;
+}
+
+.totalpave-project-box:hover .project-overlay {
+    transition: all 0.3s ease-in-out 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.project-overlay {
+    background : rgba(0,0,0,.75);
+    border : 2px solid #ff7600;
+    visibility: hidden;
+    position: absolute;
+    text-align:center;
+    padding-top:40px;
+    color: #ffffff;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+
+
+.project-overlay hr {
+    width : 70%;
+	
+}
+
+.totalpave-project-gallery li {
+    margin:15px;
+}
+
+.txt_darkgrey {
+    color: #333333;
+}
+
+.txt_orange {
+	color: #3399FF;
+}
+
+.txt_slogan {
+    font-size:14px; 
+    color:#929292;
+}
+
+.totalpave-line-header span {
+    font-size: 18px; 
+    float :left; 
+    margin-top: 10px;
+}
+
+.team_box  div {
+    text-align: center; 
+    padding-top: 100px;
+}
+
+.span_blog {
+    margin-bottom: 80px;
+}
+
+.blog_post {
+    color: #333333; 
+    padding: 10px;
+}
+
+.blog_header {
+    font-weight: bold; 
+    font-size: 16px; 
+}
+
+.blog_text {
+    text-align: justify; 
+    font-size: 14px; 
+    margin-top: 20px;
+}
+
+#totalpave-contact {
+	margin-top:100px; 
+	font-size:14px;
+}
+.totalpave-contact-map {
+    margin-bottom: 15px;
+    height: 378px;
+
+}
+
+.head_contact {
+    padding-bottom:80px; 
+    margin-bottom:0;
+}
+
+.contact_right img {
+	margin-right:5px;
+}
+
+.contact_right form {
+	padding-left:15px;
+	padding-right:15px
+}
+
+.tweet_txt {
+	border-left:2px solid #ffffff; 
+	min-height:160px;
+}
+
+.twitter_user {
+	color: #FFFF33; 
+	font-size: 14px;
+	float: right;
+}
+
+.totalpave-partners {
+	border-top: 2px solid #cccccc;
+}
+
+.totalpave-partners .totalpave-partner-item {
+    margin-bottom: 5px;
+}
+
+.totalpave-footer {
+	background-color:#eeeeee;
+	border-top: 2px solid #cccccc; 
+	margin-top: 100px;
+}
+
+.footer_container {
+	margin-top:60px; 
+	margin-bottom:20px;
+}
+
+.footer_bottom_content {
+	margin: auto;
+	margin-bottom: 30px;
+	font-size: 14px;
+	color:#333333;
+}
+
+.social-icon-fb {
+	background: url('../images/social-icon-fb.png') no-repeat;
+	width: 42px;
+	height: 42px;
+	display: block;
+}
+
+a:hover .social-icon-fb {
+    background: url('../images/social-icon-fb-over.png') no-repeat;
+}
+
+.social-icon-rss {
+    background: url('../images/social-icon-rss.png') no-repeat;
+    width: 42px;
+    height: 42px;
+    display: block;
+}
+
+a:hover .social-icon-rss {
+    background: url('../images/social-icon-rss-over.png') no-repeat;
+}
+
+.social-icon-twitter {
+    background: url('../images/social-icon-twitter.png') no-repeat;
+    width: 42px;
+    height: 42px;
+    display: block;
+}
+
+a:hover .social-icon-twitter {
+    background: url('../images/social-icon-twitter-over.png') no-repeat;
+}
+
+.social-icon-linkedin {
+    background: url('../images/social-icon-linkedin.png') no-repeat;
+    width: 42px;
+    height: 42px;
+    display: block;
+}
+
+a:hover .social-icon-linkedin {
+    background: url('../images/social-icon-linkedin-over.png') no-repeat;
+}
+
+.social-icon-dribbble {
+    background: url('../images/social-icon-dribbble.png') no-repeat;
+    width: 42px;
+    height: 42px;
+    display: block;
+}
+
+a:hover .social-icon-dribbble {
+    background: url('../images/social-icon-dribbble-over.png') no-repeat;
+}
+
+.icon-email {
+	background: url('../images/icon-email.png') no-repeat;
+	width: 42px;
+	height: 42px;
+	display: block;
+}
+
+a:hover .icon-email {
+    background: url('../images/icon-email-over.png') no-repeat;
+}
+	
+	display: block;
+ul.totalpave-project-gallery  li  a img:hover {
+    border: 3px solid #ff7600;
+}
+
+.totalpave-gallery-category a {
+	color:#333333; 
+}
+
+.totalpave-gallery-category a.active {
+	color:#e67e22; 
+	text-decoration:none;
+}
+
+.totalpave-gallery-category a:focus {
+	color:#e67e22;
+	text-decoration:none;	
+}
+
+.totalpave-gallery-category a:hover {
+	color:#e67e22; 
+	text-decoration:none;
+}
+
+.link_orange:hover {
+    text-decoration:none;
+}
+.totalpave-project-gallery {         
+    margin:0 0 0 0;
+    margin-top:30px;
+    margin-left: -40px;
+}
+.totalpave-project-gallery li {     
+    list-style:none;
+    margin-bottom:25px;           
+}
+.totalpave-project-gallery li img {
+  cursor: pointer;
+}
+
+.totalpave-tweets {
+    background-color: #8996a0;
+    min-height:200px;
+    font-family:  'Open Sans', sans-serif;
+    font-size:20px;
+    color:#ffffff;
+    margin-top:100px;
+}
+
+.form-control {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    font-style: italic;
+}
+
+.btn_loadmore {
+	margin-top:30px; 
+	margin-bottom:80px;
+}
+
+.blog_box {
+	margin-left: -12px;
+}
+
+@media (min-width:991px) and (max-width:1200px) {
+    .totalpave-project-box, .project-overlay {
+        height:170px;
+        width:170px;
+    }
+
+    .totalpave-project-gallery {
+        margin-left: -70px;
+    }
+
+    .totalpave-service-item-header {
+        padding: 16px 10px 20px;
+    }
+
+    .totalpave-header-orange {
+        min-width: 230px;
+    }
+
+    .team_box,  .team_box_over {
+        height:220px;
+        width:220px;
+    }
+	
+}
+
+
+@media (max-width:991px) {
+    .team-inner {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+	
+    .totalpave-btn-read-more {
+        float:right;
+        margin-bottom :40px; 
+    }
+}
+
+
+@media (min-width:768px) and (max-width:990px) {
+    .member-thumb .thumb-overlay {
+        padding-left: 30%;
+    }
+    .totalpave-project-box , .project-overlay {
+       height:130px;
+       width:130px;
+       padding-top: 0px;
+    }
+
+    .totalpave-project-gallery {
+       margin-left: 10px; 
+    }
+
+    .blog_box{
+       margin-right: -140px;
+    }
+}
+
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    padding-top: 9px;
+    padding-bottom: 9px;
+  } 
+}
+
+@media (max-width: 768px) {
+    .member-thumb .thumb-overlay {
+        padding-left: 40%;
+       
+    }
+    .totalpave-btn-read-more {
+            float:right;
+            margin-bottom :40px; 
+      }
+}
+
+@media (max-width: 380px) {
+    .member-thumb .thumb-overlay {
+            padding-left: 30%;
+
+    }
+	.totalpave-service-item-header {
+		font-size: 16px;
+		
+		padding: 23px 10px 22px;
+	}
+	.totalpave-header-orange {
+		min-width: 0px;
+	}
+	
+}
+
+@media (min-width:991px) and (max-width: 1200px) {
+	 .team_hr {
+	width: 30%;
+	}
+}
+
+@media (min-width:683px) and ( max-width: 991px) {
+	 .team_hr {
+		width: 25%;
+	}
+}
+
+@media (min-width:585px) and ( max-width: 683px) {
+        .member-thumb .thumb-overlay {
+            padding-left: 25%;
+
+        }
+	 .team_hr {
+		width: 23%;
+	}
+}
+
+@media (min-width:536px) and ( max-width: 585px) {
+	 .team_hr {
+		width: 21%;
+	}
+}
+
+@media  (min-width:410px) and  ( max-width: 536px) {
+	 .team_hr {
+		width: 18%;
+	}
+}
+
+@media  ( max-width: 410px) {
+	 .team_hr {
+		width: 13%;
+	}
+}
+
+/* ------ Styles for Animate.css ----- */
+
+
+.hideme{
+     opacity:0;
+}
+.showme{
+     opacity:1;
+}
