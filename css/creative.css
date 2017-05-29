@@ -90,9 +90,10 @@ aside {
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
+  padding: 20px 20px;
   
 }
-.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default ..container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
   color: #1a70b2;
 }
@@ -108,6 +109,7 @@ aside {
   font-weight: 700;
   font-size: 15px;
   color: #222222;
+  padding: 20px 20px;
 }
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
@@ -131,6 +133,10 @@ aside {
     background-color: transparent;
     border-color: #BBBBBB;
   }
+  
+  .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    height: 60px;
+}
   .navbar-default .navbar-header .navbar-brand {
     color: rgba(66, 102, 154, 1);
   }
